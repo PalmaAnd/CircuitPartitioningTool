@@ -48,7 +48,7 @@ void GateList::markConnectedGates(int startGateId, int n, ConnectionList& connec
             int nachGateId = currentConnection.getNachGateId();
 
             if (vonGateId == gateId && getGateById(nachGateId)->marked == 0) {
-                getGateById(nachGateId)->marked = n;  // TODO: Wenn die Connection Pointer zu den Gates hätte, müsste man hier gar nicht suchen.  Rade
+                getGateById(nachGateId)->marked = n;
                 que.push(nachGateId);
             } else if (nachGateId == gateId && getGateById(vonGateId)->marked == 0) {
                 getGateById(vonGateId)->marked = n;
