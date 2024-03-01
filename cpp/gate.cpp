@@ -11,9 +11,7 @@ GateList::GateList(char *fileName) {
             gates.emplace(s);
         }
     }
-    catch (EOFException) {
-        cout << "End of file for gates" << endl;
-    }
+    catch (EOFException) { }
 }
 
 Gate* GateList::getGateById(unsigned int id) {

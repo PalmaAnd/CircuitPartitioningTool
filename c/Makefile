@@ -18,10 +18,14 @@ ALLOBJECTS = $(OBJECTS) $(patsubst %,%.o,$(PROGRAMS))
 # Default target: Will build everything defined by PROGRAMS when only make is entered
 default: $(PROGRAMS)
 
+test: $(PROGRAMS)
+	./programm gate.dat.example connection.dat.example > output_test.txt
+	diff -q -w output_test.txt test/output.txt
+
 programm: $(OBJECTS)
 
 # Clean rule: Remove compiled object files, dependency files, and the program executables
 clean:
-		-rm -f $(ALLOBJECTS) $(ALLOBJECTS:%.o=%.d) $(PROGRAMS)
+		-rm -f $(ALLOBJECTS) $(ALLOBJECTS:%.o=%.d) $(PROGRAMS) output_test.txt
 
 -include $(ALLOBJECTS:%.o=%.d)

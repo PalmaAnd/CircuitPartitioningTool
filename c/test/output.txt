@@ -1,0 +1,35 @@
+################### Output ###################
+
+###################################################
+
+# ------------ Teilschaltung mit n = 1 -----------#
+#              Gate[1]: marked = 1              #
+#              Gate[2]: marked = 1              #
+#              Gate[3]: marked = 1              #
+#              Gate[4]: marked = 1              #
+#              Gate[5]: marked = 1              #
+#              Gate[6]: marked = 1              #
+#              Gate[7]: marked = 1              #
+#              Gate[8]: marked = 1              #
+#              Gate[9]: marked = 1              #
+#              Gate[10]: marked = 1              #
+#              Gate[11]: marked = 1              #
+#              Gate[12]: marked = 1              #
+#              Gate[13]: marked = 1              #
+#              Gate[14]: marked = 1              #
+###################################################
+
+# ------------ Teilschaltung mit n = 2 -----------#
+#              Gate[100]: marked = 2              #
+#              Gate[101]: marked = 2              #
+#              Gate[102]: marked = 2              #
+#              Gate[103]: marked = 2              #
+#              Gate[104]: marked = 2              #
+#              Gate[105]: marked = 2              #
+#              Gate[106]: marked = 2              #
+#              Gate[107]: marked = 2              #
+#              Gate[108]: marked = 2              #
+#              Gate[109]: marked = 2              #
+#              Gate[110]: marked = 2              #
+#              Gate[111]: marked = 2              #
+###################################################

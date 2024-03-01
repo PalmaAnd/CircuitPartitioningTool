@@ -7,19 +7,47 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
-
+  build_c:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
-        
-    - name: Make C
-      run: |
-        cd c
-        make
-        
-    - name: Make C++
-      run: |
-        cd cpp
-        make
+      - uses: actions/checkout@v4
+
+      - name: Make C
+        run: |
+          cd c
+          make
+
+      - name: Test C
+        run: |
+          cd c
+          make
+          make test
+
+      - name: Clean C
+        run: |
+          cd c
+          make
+          make clean
+  build_cpp:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Make C++
+        run: |
+          cd cpp
+          make
+
+      - name: Test C++
+        run: |
+          cd cpp
+          make
+          make test
+
+      - name: Clean C++
+        run: |
+          cd cpp
+          make
+          make clean
