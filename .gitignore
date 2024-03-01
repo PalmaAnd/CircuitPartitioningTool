@@ -35,4 +35,5 @@ programm
 .idea/
 *.app
 /cmake-build-debug/*
-*/output_test.txt
+./c/output_test.txt
+./cpp/output_test.txt
