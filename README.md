@@ -18,6 +18,14 @@ programm gate.dat connection.dat
 
 3. The program will process the inputs and generate the correct output.
 
+## Testing
+
+To ensure the correctness of the program, follow these steps to run the tests:
+
+1. `cd` into the wanted folder
+2. Build the program by running `make` in the project directory. 
+3. Run the tests by executing `make test`.
+
 ## Algorithm
 
 The algorithm employed by the Circuit Decomposer follows these steps:
@@ -29,10 +37,6 @@ The algorithm employed by the Circuit Decomposer follows these steps:
 5. Repeat step 4 until there are no changes.
 6. Increment n by 1.
 7. Repeat steps 3-6 until all elements are marked.
-
-## Contributing
-
-Contributions to this project are welcome! If you have any suggestions, bug reports, or feature requests, please feel free to open an issue or submit a pull request.
 
 ## License
 
