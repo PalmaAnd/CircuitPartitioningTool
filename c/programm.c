@@ -7,11 +7,11 @@
 int main(int argc, char *argv[]) {
 
     /**
-     * Counter for the given args: the program name, and 4 .dat files
+     * Counter for the given args: the program name, and 2 .dat files
      */
-    const int NUM_EXPECTED_ARGS = 5;
-    if (argc < NUM_EXPECTED_ARGS) {
-        fputs("Usage: programm gate.dat connection.dat type.dat function.dat\n", stderr);
+    const int NUM_EXPECTED_ARGS = 2;
+    if (argc < NUM_EXPECTED_ARGS + 1) {
+        fputs("Usage: programm gate.dat connection.dat\n", stderr);
         exit(1);
     }
     GateList *gateList = newGateList();

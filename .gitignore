@@ -34,3 +34,4 @@ programm
 *.dat
 .idea/
 *.app
+/cmake-build-debug/*

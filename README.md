@@ -9,13 +9,11 @@ To use this tool, follow these steps:
 1. Prepare input files:
     - `gate.dat`: Information about gates in the circuit.
     - `connection.dat`: Details of connections between gates.
-    - `type.dat`: Types of gates.
-    - `function.dat`: Functions performed by gates.
 
 2. Run the program with the appropriate command:
 
 ```bash
-programm gate.dat connection.dat type.dat function.dat
+programm gate.dat connection.dat
 ```
 
 3. The program will process the inputs and generate the correct output.

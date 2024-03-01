@@ -5,9 +5,9 @@
 using namespace std;
 
 int main(int argc, char *argv[]) {
-    int const NUM_EXPECTED_ARGS = 4;
+    int const NUM_EXPECTED_ARGS = 2;
     if (argc < NUM_EXPECTED_ARGS + 1) {
-        cerr << "Usage: programm gate.dat connection.dat type.dat function.dat\n" << endl;
+        cerr << "Usage: programm gate.dat connection.dat\n" << endl;
         exit(1);
     }
 
